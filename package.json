@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/keeffEoghan/array-utils",
   "author": "Eoghan O'Keeffe <epok.tech@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "10.16.3",
+    "yarn": "1.19.0"
+  }
 }
