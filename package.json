@@ -1,13 +1,27 @@
 {
-  "name": "array-utils",
+  "name": "@epok.tech/array-utils",
   "version": "0.0.0",
   "description": "Simple utils around JS arrays for flexible and terse code - new arrays by default (for FP/immutable), mutate if specified (to reuse memory).",
   "main": "index.js",
-  "repository": "https://github.com/keeffEoghan/array-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keeffEoghan/array-utils.git"
+  },
   "author": "Eoghan O'Keeffe <epok.tech@gmail.com> (https://epok.tech)",
   "license": "MIT",
   "engines": {
     "node": "10.16.3",
     "yarn": "1.19.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/keeffEoghan/array-utils/issues"
+  },
+  "homepage": "https://github.com/keeffEoghan/array-utils#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "utils"
+  ]
 }
