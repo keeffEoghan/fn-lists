@@ -6,12 +6,14 @@ import { reduce } from './reduce';
  * into which properties will be mapped to be defined (a new array, by default),
  * avoiding always creating new arrays.
  *
- * @param {function} f The iteratee function, given standard arguments.
+ * @param {function} f The iteratee function, given standard `Array.map`
+ *     arguments, plus the output object.
  * @param {array} a The array operand.
- * @param {*} [out=[]] The initial accumulator, if given; `a`, if defined and falsey.
+ * @param {*} [out=[]] The initial accumulator, if given; `a`, if defined and
+ *     falsey.
  */
 export const map = (f, a, out = []) => reduce((out, v, i) => {
-        out[i] = f(v, i, a);
+        out[i] = f(v, i, a, out);
 
         return out;
     },
