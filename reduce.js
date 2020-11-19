@@ -1,3 +1,5 @@
+const r = Array.prototype.reduce;
+
 /**
  * Reduce an array-like object.
  * Similar to native, but with iteratee-first arguments.
@@ -11,8 +13,7 @@
  * @param {*} [out] The initial accumulator, if given; otherwise, uses standard
  *     `Array.reduce` behaviour.
  */
-export const reduce = (f, a, out) => ((out === undefined)?
-        Array.prototype.reduce.call(a, f)
-    :   Array.prototype.reduce.call(a, f, out));
+export const reduce = (f, a, out) =>
+    ((out === undefined)? r.call(a, f) : r.call(a, f, out));
 
 export default reduce;

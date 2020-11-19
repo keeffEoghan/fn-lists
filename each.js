@@ -1,3 +1,5 @@
-export const each = (f, a) => Array.prototype.forEach.call(a, f);
+const e = Array.prototype.forEach;
+
+export const each = (f, a) => e.call(a, f);
 
 export default each;
