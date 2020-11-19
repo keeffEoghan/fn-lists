@@ -1,12 +1,12 @@
 {
-  "name": "@epok.tech/array-utils",
-  "version": "0.0.6",
-  "description": "Simple utils around JS arrays for flexible and terse code - new arrays by default (for FP/immutable), mutate if specified (to reuse memory).",
+  "name": "@epok.tech/fn-lists",
+  "version": "0.0.7",
+  "description": "Simple utils around JS lists (array-like) for flexible and terse code - new arrays by default (for FP/immutable), mutate if specified (to reuse memory).",
   "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keeffEoghan/array-utils.git"
+    "url": "git+https://github.com/keeffEoghan/fn-lists.git"
   },
   "author": "Eoghan O'Keeffe <epok.tech@gmail.com> (https://epok.tech)",
   "license": "MIT",
@@ -15,9 +15,9 @@
     "yarn": ">= 1.22.0 || *"
   },
   "bugs": {
-    "url": "https://github.com/keeffEoghan/array-utils/issues"
+    "url": "https://github.com/keeffEoghan/fn-lists/issues"
   },
-  "homepage": "https://github.com/keeffEoghan/array-utils#readme",
+  "homepage": "https://github.com/keeffEoghan/fn-lists#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
