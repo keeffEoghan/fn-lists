@@ -1,7 +1,8 @@
 /**
- * Creates an iterable array of the given length of empty entries, or
- * those given by optional arguments to `Array.fill`.
+ * Creates an iterable array of the given length of empty entries, or those
+ * given by optional arguments to `Array.fill`.
  *
+ * @see Array.constructor
  * @see Array.fill
  *
  * @param {number} n The number of elements to create.
@@ -11,6 +12,7 @@
  *
  * @returns {array} An array of the given number of empty elements.
  */
-export const range = (n, value, start, end) => Array(n).fill(value, start, end);
+export const range = (n, value, start, end) =>
+    Array(Math.floor(n)).fill(value, start, end);
 
 export default range;

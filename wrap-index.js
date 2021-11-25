@@ -16,7 +16,7 @@ export const wrapIndex = (i, l) => ((i%l)+l)%l;
  * @see wrapIndex
  *
  * @param {number} i The index to wrap.
- * @param {array} a A list to index (array or array-like object).
+ * @param {array} a A list to index (array or array-like list).
  * @param {number} a.length The length property of the given list.
  *
  * @returns {*} The entry at the wrapped index of the given list.
