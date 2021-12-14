@@ -3,10 +3,12 @@ const e = Array.prototype.forEach;
 /**
  * Iterates a function over every element of a list, returning the list.
  *
- * @param {function} f The iteratee function.
- * @param {array} a A list to iterate over (array or array-like object).
+ * @see Array.prototype.forEach
  *
- * @returns {array} The given list.
+ * @param {function} f The iteratee function.
+ * @param {array|*} a List to iterate over, array or array-like.
+ *
+ * @returns {array|*} The given list.
  */
 export const each = (f, a) => {
     e.call(a, f);

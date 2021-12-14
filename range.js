@@ -1,18 +1,22 @@
+const { fill } = Array.prototype;
+const { isFinite } = Number;
+const { floor } = Math;
+
 /**
- * Creates an iterable array of the given length of empty entries, or those
- * given by optional arguments to `Array.fill`.
+ * Fills list with the given items filled via `Array`'s `fill`.
  *
  * @see Array.constructor
- * @see Array.fill
+ * @see Array.prototype.fill
+ * @see Number.isFinite
  *
- * @param {number} n The number of elements to create.
- * @param {*} [value] A value to fill the array with; for `Array.fill`.
- * @param {number} [start=0] Start index, inclusive; for `Array.fill`.
- * @param {number} [end=n] End index, exclusive; for `Array.fill`.
+ * @param {number|array|*} [l=0] How many items to create, or existing list.
+ * @param {*} [value] A value to fill the array with; for `Array`'s `fill`.
+ * @param {number} [start] Start index, inclusive; for `Array`'s `fill`.
+ * @param {number} [end] End index, exclusive; for `Array`'s `fill`.
  *
- * @returns {array} An array of the given number of empty elements.
+ * @returns {array|*} List with items filled as given.
  */
-export const range = (n, value, start, end) =>
-    Array(Math.floor(n)).fill(value, start, end);
+export const range = (l = 0, value, start, end) =>
+    fill.call(((isFinite(l))? Array(floor(l)) : l), value, start, end);
 
 export default range;

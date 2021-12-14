@@ -5,11 +5,12 @@ const r = Array.prototype.reduce;
  * Similar to native, but with iteratee-first arguments.
  * Supports the native single-argument behaviour.
  *
- * @param {function} f The iteratee function, given standard arguments, and any
- *     given `to`.
- * @param {array} a The list to reduce over (array or array-like list).
- * @param {*} [to] The initial accumulator, if given; otherwise, uses standard
- *     `Array.reduce` behaviour.
+ * @see Array.prototype.reduce
+ *
+ * @param {function} f Iteratee function, called as `Array`'s `reduce` does.
+ * @param {array|*} a List to reduce over, array or array-like.
+ * @param {*} [to] The initial accumulator, if any; handled like `Array`'s
+ *     `reduce` does, given or not.
  *
  * @returns {*} The result of running the reducer iteratee function over all
  *     elements of the list.

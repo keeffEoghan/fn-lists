@@ -20,8 +20,8 @@ export const iterableStatus = {
  *
  * @param {*} x An object to check.
  *
- * @returns {boolean|string} Whether the given object seems iterable - with a
- *     `Symbol.iterator` function; a numeric `length` property; none, or all.
+ * @returns {boolean|string} Whether the given object seems iterable - having a
+ *     `Symbol.iterator` function; a numeric `length` property; none; or all.
  */
 export function iterable(x) {
     if(!(x instanceof Object)) { return iterableStatus.none; }

@@ -6,11 +6,14 @@ import { reduce } from './reduce';
  * into which properties will be mapped to be defined (a new array, by default),
  * avoiding always creating new arrays.
  *
+ * @see Array.prototype.map
+ * @see [reduce]{@link ./reduce.js}
+ *
  * @param {function} f The iteratee function, given standard `Array.map`
  *     arguments, and any given `to`.
- * @param {array} a The list to map over (array or array-like list).
- * @param {*} [to=[]] The initial accumulator, if given; `a` if falsey; or a new
- *     array if not given.
+ * @param {array|*} a The list to map over, array or array-like.
+ * @param {false|*} [to=[]] The initial accumulator, if given; `a` if falsey; or
+ *     a new array if not given.
  *
  * @returns {*} The result of mapping `to` through the iteratee function over
  *     the `a` list.
