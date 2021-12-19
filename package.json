@@ -1,6 +1,6 @@
 {
   "name": "@epok.tech/fn-lists",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple utils around JS lists (array-like) for flexible and terse code - new arrays by default (for FP/immutable), mutate if specified (to reuse memory).",
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "range.js",
     "reduce.js",
     "shuffle.js",
+    "wrap.js",
     "wrap-index.js"
   ],
   "files": [
